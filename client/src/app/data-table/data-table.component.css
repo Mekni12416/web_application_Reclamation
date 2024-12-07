@@ -1,0 +1,42 @@
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  font-size: xx-large;
+}
+
+mat-card {
+  width: 70%;
+  margin: auto;
+}
+
+th {
+  background-color: rgb(34, 31, 31) !important;
+  color: white;
+}
+
+mat-form-field { 
+  width: 100%;
+}
+
+.masked-characters {
+  letter-spacing: 0.5em; 
+}
+
+.etat-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: inherit;
+}
+
+.filter {
+  display: flex;
+  /* align-items: center; */
+}
+
+.add-reclamation {
+  padding: 27px 0;
+  margin-left: 16px;
+}

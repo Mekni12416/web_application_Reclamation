@@ -1,0 +1,33 @@
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-spin"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+<div class="content">
+    <img src="../../assets/images/side-img.jpg" alt="side-img" id="side-img">
+    <div class="right-side">
+        <div class="form-container">
+            <div class="header">
+                <h1>Mesa Verde Bank</h1>
+                <!-- <h2>Espace Agent</h2> -->
+            </div>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+                <h2>Welcome Back</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" formControlName="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" formControlName="password" >
+
+                <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+                <button type="submit" >Login</button>
+                <span>Don't have an account ? <a href="/signup">Join Us</a></span>
+            </form>
+        </div>
+    </div>
+</div>
